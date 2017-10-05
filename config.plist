@@ -65,7 +65,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 rootless=0 -alcbeta</string>
+		<string>dart=0 -alcbeta -lilubeta -igfxbeta</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -123,7 +123,7 @@
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>Mac</string>
+		<string>Material</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -145,10 +145,10 @@
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
+		<key>AppleIntelCPUPM</key>
+		<false/>
 		<key>AppleRTC</key>
 		<true/>
-		<key>AsusAICPUPM</key>
-		<false/>
 		<key>Debug</key>
 		<false/>
 		<key>KernelCpu</key>
@@ -306,41 +306,69 @@
 				CqoGDA==
 				</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.13 (based on Austere.J patch by PMheart)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				TIlVuHZA
+				</data>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				TIlVuOtA
+				</data>
+			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
 		<key>BooterConfig</key>
-		<string>0xbb</string>
+		<string>0xbc</string>
 		<key>CsrActiveConfig</key>
 		<string>0x1ff</string>
 		<key>MLB</key>
 		<string>C02140302D5DMT31M</string>
 		<key>ROM</key>
-		<string>36145a31fedf</string>
+		<data>
+		GpaW37r9
+		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>12/22/2016</string>
+		<string>08/08/2017</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IM171.88Z.0105.B15.1612221002</string>
+		<string>IM171.88Z.0110.B00.1708080012</string>
 		<key>Board-ID</key>
 		<string>Mac-B809C3757DA9BB8D</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>C02620403GUDJWNFB</string>
 		<key>BoardType</key>
 		<integer>10</integer>
+		<key>BoardVersion</key>
+		<string>iMac17,1</string>
 		<key>ChassisAssetTag</key>
 		<string>iMac-Aluminum</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>0x13</string>
+		<string>0x09</string>
 		<key>Family</key>
-		<string>iMac</string>
+		<string>iMac17,1</string>
+		<key>FirmwareFeatures</key>
+		<string>0xFC0FE136</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF3F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
@@ -365,17 +393,19 @@
 		</dict>
 		<key>Mobile</key>
 		<false/>
+		<key>PlatformFeature</key>
+		<string>0x00</string>
 		<key>ProductName</key>
 		<string>iMac17,1</string>
 		<key>SerialNumber</key>
-		<string>C02QYJS8H2YQ</string>
+		<string>C02RR1REGG7L</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>69BBF4F3-3816-4940-A21E-2F87537750A6</string>
+		<string>5A5DB94B-49E5-4F66-9FB5-A8ADE22212CF</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
